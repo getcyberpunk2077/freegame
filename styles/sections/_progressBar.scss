@@ -1,0 +1,26 @@
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 47px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-top: 19px;
+  }
+  
+  .progress-value {
+    animation: load 20s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: $pink;
+    height: 33px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

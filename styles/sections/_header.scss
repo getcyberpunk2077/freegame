@@ -1,0 +1,33 @@
+.header {
+    background-color: $yellow;
+    height: 80px;
+
+    @include xs {
+    height: 104px;
+        
+    }
+    .logo {
+        width: 250px;
+        height: 100%;
+        background-image: url("./img/logo-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include xs {
+            width: 350px;
+        }
+
+        .logo-img {
+            width: 80%;
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}

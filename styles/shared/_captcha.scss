@@ -1,0 +1,41 @@
+.captcha-list {
+    transform: translateY(60px);
+    width: 264px !important;
+
+    @media(min-width:420px) {
+        width: 293px !important;
+    }
+
+    @media(min-width:420px) {
+        width: 293px !important;
+    }
+
+    .mobile p {
+        font-size: 16px !important;
+    }
+
+    .stars {
+        @media(min-width:520px) {
+            display: none !important;
+        }
+    }
+
+    .item-content {
+        display: block !important;
+        padding: initial !important;
+        width: initial !important;
+        h5 {
+            font-size: 16px !important;
+        }
+    }
+    .is-free {
+        width: 80% !important;
+        font-size: 16px !important;
+    }
+
+    .offer-list-mobile {
+        img {
+            display: none;
+        }
+    }
+}

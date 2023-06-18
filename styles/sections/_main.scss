@@ -1,0 +1,73 @@
+main {
+    
+    .welcome {
+        background:$yellow;
+        background-image: url("./img/main-bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 40px;
+            bottom: -30px;
+            left: 0px;
+            background-image: url('./img/bottom-header.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x:-10px;
+        }
+
+        .container {
+            height: 300px;
+
+            @include medium {
+                height: auto;
+            }
+        }
+       
+        .character-img {
+            position: absolute;
+            bottom: -30px;
+            left:-220px;
+            z-index: 10;
+            width: 350px;
+
+            @include medium {
+                bottom: 322px;
+                left:-160px;
+            }
+            @media (min-width:1120px) {
+                width: auto;
+                bottom: -30px;
+                left:-255px;
+            }
+
+            @media (min-width: 1600px) {
+                left: 20px;
+            }
+           
+            img {
+                width: 100%;
+            }
+        }
+
+        .title {
+            margin: 15px 0 -15px 0;
+
+            @include medium {
+                margin: 155px 0 103px 0;
+            }
+
+        }
+        
+    }
+
+}

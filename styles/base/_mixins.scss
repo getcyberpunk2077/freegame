@@ -1,0 +1,55 @@
+// brakepoints 
+$brake-xs: 568px;
+$brake-small: 768px;
+$brake-mid: 1080px;
+$brake-lg: 1200px;
+$my-big: 1300px;
+$special: 1146px;
+
+// Mixins 
+
+@mixin special {
+    @media(min-width: $special) {
+        @content;
+    }
+}
+@mixin px360 {
+    @media(min-width: 360px) {
+        @content;
+    }
+}
+@mixin extra-small {
+    @media(min-width: 420px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media(min-width: $brake-xs) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media(min-width: $brake-small) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media(min-width: $brake-mid) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media(min-width: $brake-lg) {
+        @content;
+    }
+}
+
+@mixin big {
+    @media(min-width: $my-big) {
+        @content;
+    }
+}
